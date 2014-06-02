@@ -1,0 +1,26 @@
+% vim: set spell
+
+\section{Thesis Proposal}
+
+We consider building a programming language where the programmer can state a
+bound on the computational complexity of a program section, and have those
+bounds statically guaranteed.
+
+We proceed by limiting the programmer to a subset of the language within a
+bounded section, where the subset is reducible to an implicit categorisation of
+the stated bound. 
+
+The thesis proposal is thereby twofold:
+
+\begin{enumerate}[(a)]
+
+\item implicitly categorise a range of interesting complexity classes; and
+
+\item devise a programming language, supporting effectful program sections,
+bounded to the above classes.
+
+\end{enumerate}
+
+The bounds are guaranteed trivially if we only allow for a no-op in a bounded
+section. So by ``effectful'', we mean that stating a higher bound should enable
+more complex computation.

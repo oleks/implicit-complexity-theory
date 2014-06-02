@@ -1,0 +1,40 @@
+\documentclass[a4paper,twocolumn]{article}
+
+\usepackage[fancy]{template}
+\usepackage{survival-pack}
+\setup{%
+  subject={Master's Thesis},%
+  assignment={Thesis Synopsis},%
+  date={June 3, 2013.}%
+}
+\setupLocation[short=DIKU]{Datalogisk institut, Copenhagen University}
+\setupAuthor[addendum={\email{oleks@oleks.info}}]{Oleksandr Shturmov}
+
+\begin{document}
+
+\twocolumn[\maketitle]
+\thispagestyle{first} % no fancy header on first page (just a fancy footer).
+
+% \section{Audience}
+
+% My empricial observations show that a Computer Science thesis is often
+% comprehensible only to few others than the authors themselves. I choose to
+% aim for my thesis, and thereby synopsis, to be comprehensible for a computing
+% enthusiast in general. Setting them as the target audience, will hopefully
+% force me to digg at all definitions and considerations at sufficient depths,
+% arriving hopefully, at something comprehensible to a Computer Science
+% graduate.
+
+\input{working-title}
+
+\input{background}
+
+\input{thesis-proposal}
+
+\input{learning-objectives}
+
+\input{tasks}
+
+\input{references}
+
+\end{document}
