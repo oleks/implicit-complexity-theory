@@ -5,11 +5,43 @@
 The thesis consists of two parts: and introductory part, and a body of work.
 
 The introductory part is expected to be completed within the first working
-month, and covers the learning obejctives (\ref{survey})--(\ref{language})
-above.
+month, and includes the following tasks:
+
+\begin{enumerate}[(1)]
+
+\item Survey previous work on implicit complexity theory and contrast it to the
+explicit variant.
+
+\item Choose and define a range of computational complexity classes, using the
+conventional, explicit approach.
+
+\item Devise a programming language, where the programmer can state, and be
+statically guaranteed, a computational complexity bound on a program section,
+e.g. the entire program.
+
+\end{enumerate}
 
 The rest of the thesis is concerned with implicitly categorising the chosen
-complexity classes, and extending the language, enabling the programmer to
-write effectful bounded sections, arriving perhaps, at a language useful in
-practice. This covers the learning objectives
-(\ref{categorise})--(\ref{extend}).
+complexity classes, and extending the language above, providing for effectful
+bounded program sections, arriving perhaps, at a language useful in practice.
+This includes the following tasks:
+
+\begin{enumerate}[(1)]
+
+\setcounter{enumi}{3}
+
+\item Categorise the above computational complexity classes in an implicit
+manner.
+
+\item Prove the implcit categorisations equivalent to their explicit
+counterparts.
+
+\item Extend the language above, providing for bounded and effectful program
+sections, where a programmer is limited to a subset of the language, reducible
+to an implicit categorisation of the stated bound.
+
+\end{enumerate}
+
+The last task is expected to first include providing for effectful program
+sections bounded to P. We then provide for more fine-grained, subpolynomial
+bounds.

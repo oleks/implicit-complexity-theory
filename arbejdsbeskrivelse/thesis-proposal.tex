@@ -2,25 +2,31 @@
 
 \section{Thesis Proposal}
 
-We consider building a programming language where the programmer can state a
-bound on the computational complexity of a program section, and have those
-bounds statically guaranteed.
+We consider designing a family of languages for complexity-bounded computation.
+We are concerned with the ``feasible'' complexity classes, i.e. P, and those
+contained in P.
 
-We proceed by limiting the programmer to a subset of the language within a
-bounded section, where the subset is reducible to an implicit categorisation of
-the stated bound. 
+We seek to incorporate this family into a single programming language, where
+the programmer can state, and be statically guaranteed, a computational
+complexity bound on a program section, e.g. the entire program.
+
+We first consider a programming language where all computation is bounded to P,
+e.g. \cite{bellantoni-cook-1992,jones-1999}.  We then consider subsets of this
+language, bounded to subsets of P. We extend the original language with new
+constructs, if useful to our subsets, and syntactic sugar, if useful for
+programming.
 
 The thesis proposal is thereby twofold:
 
 \begin{enumerate}[(a)]
 
-\item implicitly categorise a range of interesting complexity classes; and
+\item implicitly categorise a range of complexity classes under P; and
 
-\item devise a programming language, supporting effectful program sections,
-bounded to the above classes.
+\item devise a programming language, supporting bounded and effectful program
+sections.
 
 \end{enumerate}
 
 The bounds are guaranteed trivially if we only allow for a no-op in a bounded
-section. So by ``effectful'', we mean that stating a higher bound should enable
-more complex computation.
+section. So by ``effectful'', we mean that stating a higher bound enables more
+complex computation.
