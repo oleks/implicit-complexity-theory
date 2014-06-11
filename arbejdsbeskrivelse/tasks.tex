@@ -1,23 +1,26 @@
-% vim: set spell
+% vim: set spell:
 
 \section{Tasks}
 
 The thesis consists of two parts: and introductory part, and a body of work.
 
-The introductory part is expected to be completed within the first working
-month, and includes the following tasks:
+The introductory part is expected to be completed within the first two working
+months, and includes the following tasks:
 
 \begin{enumerate}[(1)]
 
 \item Survey previous work on implicit complexity theory and contrast it to the
 explicit variant.
 
-\item Choose and define a range of computational complexity classes, using the
-conventional, explicit approach.
+\item Choose a programming language, where all computation is bounded to P as a
+baseline.
 
-\item Devise a programming language, where the programmer can state, and be
-statically guaranteed, a computational complexity bound on a program section,
-e.g. the entire program.
+\item Choose a range of computational complexity classes under P, which could
+be interesting in practice.
+
+\item Extend the language with syntactic sugar, if useful to programming, and
+constructs for annotating program sections with the complexity bounds chosen
+above.\label{sugar}
 
 \end{enumerate}
 
@@ -28,20 +31,20 @@ This includes the following tasks:
 
 \begin{enumerate}[(1)]
 
-\setcounter{enumi}{3}
+\setcounter{enumi}{4}
 
 \item Categorise the above computational complexity classes in an implicit
 manner.
 
-\item Prove the implcit categorisations equivalent to their explicit
+\item Prove the implicit categorisations equivalent to their explicit
 counterparts.
 
 \item Extend the language above, providing for bounded and effectful program
 sections, where a programmer is limited to a subset of the language, reducible
-to an implicit categorisation of the stated bound.
+to an implicit categorisation of the stated bound.\label{effectful}
 
 \end{enumerate}
 
-The last task is expected to first include providing for effectful program
-sections bounded to P. We then provide for more fine-grained, subpolynomial
-bounds.
+As we have noted above, the bounds are guaranteed trivially if we only allow
+for a no-op in a bounded section. Task (\ref{effectful}) may therefore induce
+further work on task (\ref{sugar}), and vice versa.
